@@ -5,14 +5,13 @@ int main() {
      std::string name;
      std::cin >> name;
      std::cout << "Введите сумму задолженности ---> ";
-     int sum;
-     std::cin >> sum;
      int credit;
+     std::cin >> credit;
+     int payment = 0;
        do {
-           std::cout << name << " ваша задолженность составляет " << sum << " рублей. \n";
+           std::cout << name << " ваша задолженность составляет " << credit << " рублей. \n";
            std::cout << "Оплатите немедленно! ---> ";
-           std::cin >> credit;
-           sum -= credit;
-       } while (sum > 0);
-       std::cout << name << ", вы молодец! Вы полностью оплатили задолженность!\n";
+           std::cin >> payment;
+       } while (payment < credit);
+       std::cout << name << ", вы полностью оплатили задолженность!\n";
 }
