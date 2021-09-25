@@ -2,7 +2,7 @@
 
 int main() {
     int count;
-    int f, f1 = -1, f2 = 1;
+    long f, f1 = -1, f2 = 1;
     std::cout << "Введите порядок числа фибоначчи ---> ";
     std::cin >> count;
        do {
