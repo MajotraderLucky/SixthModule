@@ -11,7 +11,6 @@ int main() {
                break;
            }
        } while (number > 0);
-      std::cout << "number = " << number << "\n";
            if (number == 1) {
                std::cout << "Число является степенью двойки\n";
            } else {
