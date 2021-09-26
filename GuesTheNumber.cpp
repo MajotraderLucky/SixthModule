@@ -1,6 +1,7 @@
 #include <iostream>
 
 int main() {
+    std::cout << "Gues a number from 1 to 63\n";
     std::string answer;
     int min = 1;
     int max = 64;
