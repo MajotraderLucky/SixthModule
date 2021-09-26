@@ -6,10 +6,10 @@ int main() {
     int min = 1;
     int max = 64;
     int middle = (min + max) / 2;
-    std::string yes = "Да";
-    std::string yes2 = "да";
-    std::string no = "Нет";
-    std::string no2 = "нет";
+    std::string yes = "Yes";
+    std::string yes2 = "yes";
+    std::string no = "No";
+    std::string no2 = "no";
        do {
            std::cout << "Your number is " << middle << "\n";
            std::cout <<"---> ";
@@ -29,5 +29,5 @@ int main() {
                   break;
               }
        } while (answer != yes || answer != yes2);
-       std::cout << "Загаданное число = " << middle << "\n";
+       std::cout << "The hidden number = " << middle << "\n";
 }
