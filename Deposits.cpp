@@ -2,17 +2,16 @@
 
 int main() {
        int x, y, p;
-       int sum;
        int HowYears = 0;
-    std::cout << "Add X = ---> ";
+    std::cout << "Add sum for investing --------------> ";
     std::cin >> x;
-    std::cout << "Add P = ---> ";
+    std::cout << "Add the percentage of the deposit---> ";
     std::cin >> p;
-    std::cout << "Add Y = ---> ";
+    std::cout << "Add the required amount-------------> ";
     std::cin >> y;
        do {
-           sum += (x / 100) * p;
+           x += (x * p) / 100;
            ++HowYears;
-       } while (sum < y);
-       std::cout << "Years = " << HowYears << "\n";
+       } while (x < y);
+       std::cout << "Reach the required amount = " << HowYears << "\n";
 }
